@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { ThemeToggle } from "../components/ThemeToggle";
-import { ArrowLeft, ExternalLink, Github } from "lucide-react";
-import { Link } from "react-router-dom";
+import { ExternalLink, Github } from "lucide-react";
 
 export const Home = () => {
   const projects = [
