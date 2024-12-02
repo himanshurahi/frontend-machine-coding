@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.card {
+  @apply transition-all duration-300;
+}
+
+[data-theme='black'] {
+  background: linear-gradient(to bottom, #000000, #0a0a0a);
+}
+
+[data-theme='black'] .card {
+  background: linear-gradient(145deg, #0a0a0a, #1a1a1a);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+[data-theme='black'] .card:hover {
+  border-color: theme('colors.primary');
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px -10px theme('colors.primary');
+}
+
+[data-theme='coder'] {
+  background: linear-gradient(to bottom, #1E222A, #282C34);
+}
+
+[data-theme='coder'] .card {
+  background: linear-gradient(145deg, #282C34, #3E4451);
+  border: 1px solid rgba(97, 175, 239, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+[data-theme='coder'] .card:hover {
+  border-color: theme('colors.primary');
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px -10px theme('colors.primary');
+}
