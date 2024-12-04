@@ -12,11 +12,17 @@ export const Pagination = () => {
 
   const perPage = 6;
 
+  const handlePage = (pageNo) => {
+    setCurrentPage(pageNo);
+  };
+
   const handleNext = () => {
+    if (currentPage >= totalPages) return;
     setCurrentPage((prev) => prev + 1);
   };
 
   const handlePrev = () => {
+    if (currentPage <= 1) return;
     setCurrentPage((prev) => prev - 1);
   };
 
@@ -29,7 +35,7 @@ export const Pagination = () => {
           `https://dummyjson.com/users?limit=${perPage}&skip=${skip}`
         );
         setUsers(data.users);
-        setTotalPages(data.total);
+        setTotalPages(6);
       } catch (error) {
         console.log(error);
       } finally {
@@ -101,7 +107,12 @@ export const Pagination = () => {
                   .fill()
                   .map((_, index) => {
                     return (
-                      <button className="join-item btn btn-active">
+                      <button
+                        className={`join-item btn ${
+                          currentPage == index + 1 ? "btn-active" : ""
+                        }`}
+                        onClick={() => handlePage(index + 1)}
+                      >
                         {index + 1}
                       </button>
                     );

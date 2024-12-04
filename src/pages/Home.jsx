@@ -10,7 +10,7 @@ export const Home = () => {
         "Implementation of infinite scrolling with image lazy loading",
       demo: "/pagination",
       github: "https://github.com/yourusername/infinite-gallery",
-      tags: ["React", "Intersection Observer", "Unsplash API"],
+      tags: ["React", "axios"],
     },
     {
       title: "Infinite Image Gallery",
