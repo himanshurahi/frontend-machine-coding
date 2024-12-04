@@ -158,7 +158,7 @@ export const MemoryGame = () => {
                     isFlipped(item.id) || isMatched(item.id)
                       ? "bg-primary text-black border-primary"
                       : "text-primary"
-                  } rounded-md text-primary px-8 py-6 text-center cursor-pointer`}
+                  } rounded-md  px-8 py-6 text-center cursor-pointer`}
                 >
                   {isFlipped(item.id) || isMatched(item.id) ? item.number : "x"}
                   {/* {item.number} */}
