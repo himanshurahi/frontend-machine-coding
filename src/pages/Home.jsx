@@ -13,10 +13,10 @@ export const Home = () => {
       tags: ["React", "axios"],
     },
     {
-      title: "Infinite Image Gallery",
+      title: "Memory Game",
       description:
         "Implementation of infinite scrolling with image lazy loading",
-      demo: "https://example.com/infinite-gallery",
+      demo: "/memory-game",
       github: "https://github.com/yourusername/infinite-gallery",
       tags: ["React", "Intersection Observer", "Unsplash API"],
     },
