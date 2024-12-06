@@ -5,41 +5,29 @@ import { ExternalLink, Github } from "lucide-react";
 export const Home = () => {
   const projects = [
     {
-      title: "React Pagination",
+      title: "Pagination Component",
       description:
-        "Implementation of infinite scrolling with image lazy loading",
-      demo: "/pagination",
-      github: "https://github.com/yourusername/infinite-gallery",
-      tags: ["React", "axios"],
+        "Effortless navigation through large datasets using React pagination.",
+      demo: "/pagination-demo",
+      github: "https://github.com/yourusername/react-pagination",
+      tags: ["React", "CSS", "pagination"],
     },
     {
       title: "Memory Game",
       description:
-        "Implementation of infinite scrolling with image lazy loading",
+        "A fun and interactive memory-matching game built with React.",
       demo: "/memory-game",
-      github: "https://github.com/yourusername/infinite-gallery",
-      tags: ["React", "Intersection Observer", "Unsplash API"],
+      github: "https://github.com/yourusername/memory-game",
+      tags: ["React", "Game"],
     },
+
     {
-      title: "File Explorer",
-      description: "Interactive file system explorer with tree view",
-      demo: "https://example.com/file-explorer",
-      github: "https://github.com/yourusername/file-explorer",
-      tags: ["React", "Recursion", "Tree Data Structure"],
-    },
-    {
-      title: "Kanban Board",
-      description: "Drag and drop task management board",
-      demo: "https://example.com/kanban",
-      github: "https://github.com/yourusername/kanban",
-      tags: ["React DnD", "Redux", "TypeScript"],
-    },
-    {
-      title: "Auto-complete Search",
-      description: "Search with debouncing and suggestions",
-      demo: "https://example.com/autocomplete",
-      github: "https://github.com/yourusername/autocomplete",
-      tags: ["React", "Debouncing", "Trie"],
+      title: "Poll Widget",
+      description:
+        "A customizable React widget for creating and managing polls.",
+      demo: "/poll-widget",
+      github: "https://github.com/yourusername/poll-widget",
+      tags: ["React", "Widget"],
     },
   ];
 
