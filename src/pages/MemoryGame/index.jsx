@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import GridInput from "../../components/MemoryGame/GridInput";
 import GameStatus from "../../components/MemoryGame/GameStatus";
 import MemoryGameGrid from "../../components/MemoryGame/MemoryGameGrid";
+import Header from "../../components/Header";
 
 export const MemoryGame = () => {
   const [grid, setGrid] = useState(5);
@@ -74,15 +75,7 @@ export const MemoryGame = () => {
     <div className="min-h-screen bg-base-100 text-base-content">
       <ThemeToggle />
       <div className="container mx-auto px-4 py-12 h-screen">
-        <div className="flex items-center gap-4 mb-8">
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="text-4xl font-bold"
-          >
-            Memory Game
-          </motion.h1>
-        </div>
+        <Header title={"Memory Game"} />
 
         <div className="main flex flex-col items-center">
           <GameStatus

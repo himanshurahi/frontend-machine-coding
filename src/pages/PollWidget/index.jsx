@@ -3,6 +3,7 @@ import { ThemeToggle } from "../../components/ThemeToggle";
 import { useEffect, useState } from "react";
 import { pollQuestions } from "../../utils/PollWidget/mockData";
 import PollWidgetMain from "../../components/PollWidget/PollWidgetMain";
+import Header from "../../components/Header";
 export const PollWidget = () => {
   const [pollData, setPollData] = useState(null);
 
@@ -61,15 +62,7 @@ export const PollWidget = () => {
     <div className="min-h-screen bg-base-100 text-base-content">
       <ThemeToggle />
       <div className="container mx-auto px-4 py-12 h-screen">
-        <div className="flex items-center gap-4 mb-8">
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="text-4xl font-bold"
-          >
-            Poll Widget
-          </motion.h1>
-        </div>
+        <Header title={"Poll Widget"} />
         <div className="conatiner bg-base-300 h-3/4 flex justify-center items-center">
           <PollWidgetMain
             question={pollData.question}

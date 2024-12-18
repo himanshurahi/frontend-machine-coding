@@ -8,7 +8,7 @@ export const Home = () => {
       title: "Pagination Component",
       description:
         "Effortless navigation through large datasets using React pagination.",
-      demo: "/pagination-demo",
+      demo: "/pagination",
       github: "https://github.com/yourusername/react-pagination",
       tags: ["React", "CSS", "pagination"],
     },
@@ -27,6 +27,14 @@ export const Home = () => {
         "A customizable React widget for creating and managing polls.",
       demo: "/poll-widget",
       github: "https://github.com/yourusername/poll-widget",
+      tags: ["React", "Widget"],
+    },
+    {
+      title: "Grid Lights",
+      description:
+        "A customizable React widget for creating and managing polls.",
+      demo: "/grid-lights",
+      github: "https://github.com/yourusername/grid-lights",
       tags: ["React", "Widget"],
     },
   ];

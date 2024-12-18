@@ -3,6 +3,7 @@ import { ThemeToggle } from "../../components/ThemeToggle";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { ArrowBigLeft, ArrowBigRight } from "lucide-react";
+import Header from "../../components/Header";
 
 export const Pagination = () => {
   const [users, setUsers] = useState([]);
@@ -49,15 +50,7 @@ export const Pagination = () => {
     <div className="min-h-screen bg-base-100 text-base-content">
       <ThemeToggle />
       <div className="container mx-auto px-4 py-12 h-screen">
-        <div className="flex items-center gap-4 mb-8">
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="text-4xl font-bold"
-          >
-            Pagination
-          </motion.h1>
-        </div>
+        <Header title={"Pagination"} />
         <div className="conatiner bg-base-300 h-3/4">
           {loading ? (
             <div className="h-full flex justify-center">
